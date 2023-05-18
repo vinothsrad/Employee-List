@@ -15,6 +15,13 @@
         android:theme="@style/Theme.EmployeeList"
         tools:targetApi="31">
         <activity
+            android:name=".EmployeeDetails"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".EmployeeDetail"
             android:exported="false">
             <meta-data

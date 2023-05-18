@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeDetails"
+    android:layout_margin="7dp">
+
+
+
+        <RelativeLayout
+            android:id="@+id/R_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:background="#DDD8DF"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/txtEId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Employee ID :"
+                android:textSize="22dp">
+            </TextView>
+            <TextView
+                android:id="@+id/tvId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_marginTop="4dp"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/txtEId"
+                android:layout_marginLeft="20dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Name :"
+                android:textSize="22dp"
+                android:layout_below="@+id/txtEId"
+                android:layout_marginTop="10dp"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxxxx"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/txtName"
+                android:layout_below="@+id/tvId"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="29dp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email :"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvName"
+                android:layout_marginTop="14dp"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxxxx@gmail.com"
+                android:autoLink="email"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/txtEmail"
+                android:layout_below="@+id/tvName"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="29dp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address :"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/txtEmail"
+                android:layout_marginTop="14dp"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:id="@+id/tvSuit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apt,421"
+                android:textSize="20dp"
+
+                android:layout_below="@+id/txtAddress"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="10dp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvStreet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/tvSuit"
+                android:layout_below="@+id/txtAddress"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="20dp"
+                >
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/tvCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="city"
+                android:textSize="20dp"
+                android:layout_below="@+id/tvSuit"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="10dp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvZipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zip code"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/tvCity"
+                android:layout_below="@id/tvSuit"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="29dp"
+                >
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number :"
+                android:textSize="20dp"
+
+                android:layout_below="@id/tvCity"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="10dp"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9874332321 "
+                android:textSize="20dp"
+                android:autoLink="phone"
+                android:layout_below="@+id/tvCity"
+                android:layout_toRightOf="@+id/txtPhone"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="29dp"
+                >
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

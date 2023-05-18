@@ -1,8 +1,11 @@
 package com.example.employeelist
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import retrofit2.Call
@@ -20,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         rvMain=findViewById(R.id.recycler_view)
         rvMain.layoutManager= LinearLayoutManager(this)
         getAllData()
@@ -32,7 +36,10 @@ class MainActivity : AppCompatActivity() {
             .build()
             .create(ApiInterface::class.java)
 
+
+
         var retroData= retrofit.getDate()
+
         retroData.enqueue(object: Callback<List<UserDetailsItem>> {
             override fun onResponse(
                 call: Call<List<UserDetailsItem>>,
@@ -49,5 +56,14 @@ class MainActivity : AppCompatActivity() {
 
             }
         })
+
+
+
     }
+
+
+
+
+
+
 }
